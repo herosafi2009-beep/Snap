@@ -1,6 +1,6 @@
 # Snap
 
-A Material You music player for Android that plays music stored on your device. The app colors change to match the album art of the song that's playing.
+Snap is a music player build with Flutter using Material 3 Expressive design using Claude
 
 ## Features
 
