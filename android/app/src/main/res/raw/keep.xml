@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Release builds shrink resources that code never references directly.
+  audio_service looks up the media notification icons by name at runtime
+  (getIdentifier), so without this file they are stripped, Android rejects the
+  notification ("no valid small icon") and no media notification appears.
+-->
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:keep="@drawable/ic_stat_snap,@drawable/audio_service_*,@mipmap/ic_launcher" />
