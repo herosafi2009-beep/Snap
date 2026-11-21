@@ -1,6 +1,8 @@
 # Snap
 
 Snap is a music player build with Flutter using Material 3 Expressive design using Claude
+## Download
+[Download the latest APK](https://github.com/YOUR-USERNAME/snap/releases/latest)
 
 ## Features
 
