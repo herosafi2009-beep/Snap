@@ -1,0 +1,86 @@
+name: snap
+description: "Snap - a Material You local music player for Android."
+publish_to: 'none'
+version: 2.4.1+8
+
+environment:
+  sdk: ^3.13.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State & navigation
+  flutter_riverpod: ^3.4.3
+  go_router: ^18.0.1
+
+  # Database
+  drift: ^2.35.0
+  drift_flutter: ^0.3.1
+
+  # Audio
+  just_audio: ^0.10.6
+  just_audio_background: ^0.0.1-beta.17
+  audio_session: ^0.2.4
+
+  # Library / files
+  audio_metadata_reader: ^1.8.0
+  file_picker: ^13.1.0
+  permission_handler: ^13.0.2
+  path_provider: ^2.1.6
+  path: ^1.9.1
+
+  # Theming / misc
+  dynamic_color: ^2.1.0
+  material_color_utilities: ^0.13.0
+  package_info_plus: ^10.2.1
+  collection: ^1.19.1
+  intl: ^0.20.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  build_runner: ^2.16.1
+  drift_dev: ^2.35.0
+  # Icon generation only (tool/make_icons.dart + flutter_launcher_icons).
+  flutter_launcher_icons: ^0.14.4
+  image: ^4.10.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/branding/snap_logo_white.png
+    - assets/branding/snap_logo_transparent.png
+    - assets/fonts/OFL-lexend.txt
+    - assets/fonts/OFL-nunito.txt
+    - assets/fonts/OFL-robotocondensed.txt
+    - assets/fonts/OFL-outfit.txt
+    - assets/fonts/OFL-lora.txt
+  # Optional app fonts (Settings, Appearance, Font). All are SIL Open Font
+  # License fonts from github.com/google/fonts; licenses ship in assets/fonts.
+  # Each is a variable font, so one file covers every weight.
+  fonts:
+    - family: Lexend
+      fonts:
+        - asset: assets/fonts/Lexend.ttf
+    - family: Nunito
+      fonts:
+        - asset: assets/fonts/Nunito.ttf
+    - family: RobotoCondensed
+      fonts:
+        - asset: assets/fonts/RobotoCondensed.ttf
+    - family: Outfit
+      fonts:
+        - asset: assets/fonts/Outfit.ttf
+    - family: Lora
+      fonts:
+        - asset: assets/fonts/Lora.ttf
+
+flutter_launcher_icons:
+  android: "ic_launcher"
+  image_path: "assets/branding/icon_full.png"
+  adaptive_icon_background: "#FFFFFF"
+  adaptive_icon_foreground: "assets/branding/icon_foreground.png"
+  adaptive_icon_monochrome: "assets/branding/icon_monochrome.png"
+  min_sdk_android: 21
